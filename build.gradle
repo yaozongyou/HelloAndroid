@@ -13,8 +13,11 @@ android {
     buildToolsVersion '22.0.1'
 
     buildTypes {
+        debug {
+            debuggable true
+        }
         release {
-            runProguard false
+            minifyEnabled false
             proguardFile getDefaultProguardFile('proguard-android.txt')
         }
     }
